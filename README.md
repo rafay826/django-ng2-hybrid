@@ -8,10 +8,11 @@ Django 10 and Angular 2 hybrid applications. This configuration defaults to MySQ
 
 ### How do I get set up? ###
 ####Requirements
+
 1. Python
-   * pip
-   * virtualenv
-2. Node v6<
+2. Pip
+3. Virtualenv
+4. Node v6<
 
 ####Installation
 1. virtualenv [project name]
