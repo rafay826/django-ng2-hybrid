@@ -5,8 +5,6 @@ var helpers = require('./helpers');
 
 module.exports = {
   entry: {
-    'polyfills': './src/polyfills.ts',
-    'vendor': './src/vendor.ts',
     'app': './src/main.ts'
   },
 
@@ -38,13 +36,8 @@ module.exports = {
       {
         test: /\.scss$/,
         include: helpers.root('src', 'modules'),
-        loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass?sourceMap')
+        loaders: ["style-loader", "css-loader", "sass-loader"]
       },
-//      {
-//        test: /\.scss$/,
-//        include: helpers.root('src', 'app'),
-//        loaders: ["style-loader", "css-loader", "sass-loader"]
-//      },
       {
         test: /\.css$/,
         include: helpers.root('src', 'modules'),
@@ -55,7 +48,7 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'polyfills']
+      name: ['app']
     }),
 
     new HtmlWebpackPlugin({
