@@ -126,9 +126,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets/ng-dist')
+STATIC_ROOT = os.path.join(BASE_DIR, 'ng-src/assets')
 
-STATIC_URL = '/assets/ng-dist/'
+STATIC_URL = '/ng-src/assets/'
 
 STATICFILES_DIRS = [
     #os.path.join(BASE_DIR, "static"),

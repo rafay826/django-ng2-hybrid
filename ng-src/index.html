@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% load static %}
+      
     <base href="/">
       
     <title>Jumanji</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="ng-src/assets/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
     <!-- 1. Load libraries -->
       
      <!-- Polyfill(s) for older browsers -->
-    <script src="{% static 'lib/shim.min.js' %}"></script>
-    <script src="{% static 'lib/zone.js' %}"></script>
-    <script src="{% static 'lib/Reflect.js' %}"></script>
-    <script src="{% static 'lib/system.src.js' %}"></script>
+    <script src="dist/lib/shim.min.js"></script>
+    <script src="dist/lib/zone.js"></script>
+    <script src="dist/lib/Reflect.js"></script>
+    <script src="dist/lib/system.src.js"></script>
       
     <!-- 2. Configure SystemJS -->
-    <script src="{% static 'systemjs.config.js' %}"></script>
+    <script src="systemjs.config.js"></script>
     <script>
-      System.import('./').catch(function(err){ console.error(err); });
+      System.import('app').catch(function(err){ console.error(err); });
     </script>
       
   </head>
