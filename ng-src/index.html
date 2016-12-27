@@ -11,13 +11,13 @@
     <!-- 1. Load libraries -->
       
      <!-- Polyfill(s) for older browsers -->
-    <script src="dist/lib/shim.min.js"></script>
-    <script src="dist/lib/zone.js"></script>
-    <script src="dist/lib/Reflect.js"></script>
-    <script src="dist/lib/system.src.js"></script>
+    <script src="dist/ng/lib/shim.min.js"></script>
+    <script src="dist/ng/lib/zone.js"></script>
+    <script src="dist/ng/lib/Reflect.js"></script>
+    <script src="dist/ng/lib/system.src.js"></script>
       
     <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
+    <script src="dist/system.config.js"></script>
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>

@@ -49,7 +49,7 @@
         distJs = 'dist/js/ux',
 
         // Angular 2 shims location, 
-        copyDist = 'dist/lib',
+        copyDist = 'dist/ng/lib',
         
         typeBrowserRef = "node_modules/angular2/typings/browser.d.ts",
 
